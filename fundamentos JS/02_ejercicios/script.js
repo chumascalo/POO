@@ -7,7 +7,7 @@ console.log("vinculado correctamente....")
         let ahora=2024;
         let fecha_nac=2006;
         let resultado = ahora - fecha_nac;
-        alert("mi edad es: " + resultado );
+        alert(`mi edad es:  ${resultado}` );
     }
     
     // Ejercicio 2: Asignación de valores
@@ -15,7 +15,7 @@ console.log("vinculado correctamente....")
     function asignarValores() {
     let var1 ="hola mundo";
     let var2=var1;
-    alert("el valor de var2 es: " + var2 );
+    alert(`el valor de var2 es:  ${var2}` );
     // Tu código aquí
     }
     
@@ -31,7 +31,7 @@ console.log("vinculado correctamente....")
     let resta= num1 - num3;
     let multiplicaciom= num2 * num3;
     let division= num1 / 120;
-    alert( "suma: " + suma + "\nresta: "+ resta + "\nmultiplicacion: " + multiplicaciom + "\ndivision: " + division );
+    alert(`suma: ${suma}  \nresta: ${resta}  \nmultiplicacion: ${multiplicaciom} \ndivision: ${division}`);
     // Tu código aquí
     }
     
@@ -41,8 +41,8 @@ console.log("vinculado correctamente....")
     function manipularCadenas() {
     let direccion = "rio de la plata ";
     let n_casa="2076";
-    let mensaje= "la direccion es: " + direccion + "" + n_casa;
+    let mensaje= `la direccion es: ${direccion}  ${n_casa}`;
     let longitud = mensaje.length;
-    alert("Mensaje: " + mensaje + "\nLognitud: " + "\nAntepenultimo caracter: " + mensaje.length)
+    alert(`La lognitud del mensaje es: ${mensaje.length} \nCaracter antepenultimo: ${mensaje[mensaje.length-3]}`)
     
     }
