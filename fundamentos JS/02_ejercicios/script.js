@@ -39,8 +39,8 @@ console.log("vinculado correctamente....")
     // Instrucciones: Completa la función para construir un mensaje utilizando las variables 'direccion' y 'n_casa'.
     // Luego, muestra la longitud del mensaje y el antepenultimo carácter en el mensaje. (.length) 
     function manipularCadenas() {
-    let direccion = "rio de la plata ";
-    let n_casa="2076";
+    let direccion = "Av. Alameda";
+    let n_casa="2300";
     let mensaje= `la direccion es: ${direccion}  ${n_casa}`;
     let longitud = mensaje.length;
     alert(`La lognitud del mensaje es: ${mensaje.length} \nCaracter antepenultimo: ${mensaje[mensaje.length-3]}`)
