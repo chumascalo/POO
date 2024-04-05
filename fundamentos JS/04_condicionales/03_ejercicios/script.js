@@ -23,4 +23,4 @@ else{
     concedidoDenegado = "acceso denegado";
 }
 document.getElementById("lista").innerHTML =concedidoDenegado
-}
+} 
