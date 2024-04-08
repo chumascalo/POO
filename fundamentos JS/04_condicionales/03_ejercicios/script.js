@@ -13,14 +13,15 @@ function nombreUsuario()
 let concedidoDenegado = "";
 let nombreUsuario =  prompt("ingrese su nombre de usuario: ")
 let contraseña = prompt("igrese su contraseña: ")
+let usuario = "usuario123";
+let password = "secreto";
 
-if (nombreUsuario == "usuario123" || contraseña== "secreto" )
-{
+if (nombreUsuario == usuario){
+if (contraseña == password){
     concedidoDenegado = "acceso concedido";
+}else{concedidoDenegado = "acceso denegado";}
+}else{concedidoDenegado = "acceso denegado";}
+document.getElementById("lista").innerHTML = concedidoDenegado
+}
 
-}
-else{
-    concedidoDenegado = "acceso denegado";
-}
-document.getElementById("lista").innerHTML =concedidoDenegado
-} 
+
