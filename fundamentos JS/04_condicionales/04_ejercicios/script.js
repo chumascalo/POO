@@ -19,4 +19,4 @@ function positivoNegativo(){
         resultado = `el numero es <h2>${numero}</h2>`
     }
     document.getElementById("lista").innerHTML = resultado
-} 
+}
