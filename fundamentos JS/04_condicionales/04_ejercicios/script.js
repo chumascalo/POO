@@ -8,7 +8,7 @@
 function positivoNegativo(){
     numero = parseInt(prompt("ingrese un numero"))
     resultado = ""
-    
+
     if (numero < 0 ){
     resultado = `<h2>${numero}</h2> es negativo`
     }
@@ -19,4 +19,4 @@ function positivoNegativo(){
         resultado = `el numero es <h2>${numero}</h2>`
     }
     document.getElementById("lista").innerHTML = resultado
-}
+} 
