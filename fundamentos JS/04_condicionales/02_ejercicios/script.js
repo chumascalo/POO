@@ -21,11 +21,10 @@ let temperatura = "";
 let numTemperatura = parseInt(prompt("ingrese la temperatura"));
 
 if (numTemperatura >= 25){ 
-    console.log("condicional 1..")
     temperatura= `hace calor -  <h2>${numTemperatura}°</h2> ` 
 }
-else if (0<numTemperatura < 25 ){ 
-    console.log("condicional 2..")
+else if (numTemperatura < 25 && numTemperatura > 0 ){ 
+    
     temperatura = `la temperatura es agradable -  <h2>${numTemperatura}</h2>`
 }
 else
