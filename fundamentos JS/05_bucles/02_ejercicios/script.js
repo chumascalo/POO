@@ -1,16 +1,16 @@
-/*Ejercicio 1 - Bucles While: Números creciendo de 5 en 5 desde 0 a 100 
-*/
-
-
-
-
-function bucleWhile(){
+function sumaWhile(){
 let contador = 0;
 let array = [];
+let suma = 0;
 
-while (contador <= 100 ){
-    array.push(contador);
-    contador  += 5;
+while (contador <= 10){
+array.push(contador);
+contador ++;
+
 }
-    document.getElementById("lista").innerHTML = `Números creciendo de 5 en 5 desde 0 a 100: <h2>${array}</h2>`;
+    suma = array.reduce(function(a, b) {
+        return a + b;
+    });
+
+    document.getElementById("lista").innerHTML = `array del 1 al 10 <h2>${array}</h2>  el total de la suma es: ${suma}`;
 }

@@ -1,17 +1,16 @@
-function sumaWhile(){
-let contador = 0;
-let array = [];
-let suma = 0;
+/* Ejercicio 3 - Bucles While: Primeros 10 números pares.
+Crea un programa utilizando un bucle while para almacenar en un arreglo los primeros 10 pares. */
 
-while (contador <= 10){
-array.push(contador);
-contador ++;
+function paresWhile(){
+    let array = [];
+    let contador = 0;
+    pares = 0;
+    while (contador <= 10){
+    array.push(pares)
+    contador ++;
+    pares += 2;
+    
 
 }
-
-    suma = array.reduce(function(a, b) {
-        return a + b;
-    });
-
-    document.getElementById("lista").innerHTML = `array del 1 al 10 <h2>${array}</h2>  el total de la suma es: ${suma}`;
+document.getElementById("lista").innerHTML = `los primeros 10 numeros pares son <h2>${array}</h2>`
 }
