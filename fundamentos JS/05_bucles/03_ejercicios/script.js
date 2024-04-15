@@ -4,11 +4,13 @@ Crea un programa utilizando un bucle while para almacenar en un arreglo los prim
 function paresWhile(){
     let array = [];
     let contador = 0;
-    pares = 0;
+    let pares = 0;
     while (contador <= 10){
-    array.push(pares)
-    contador ++;
-    pares += 2;
+    
+        array.push(pares)
+        pares += 2;
+        contador ++;
+    
     
 
 }
