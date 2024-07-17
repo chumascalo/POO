@@ -1,8 +1,8 @@
 function agregarNombre() {
     
     let nombreInput = document.getElementById("nombreInput");
-    let nombre = nombreInput.value.trim();;
-    if (nombre !== "") {
+    let nombre = nombreInput.value.trim();
+    if (nombre !== "" ) {
     
         let li = document.createElement("li");
 
