@@ -1,0 +1,9 @@
+body{
+    padding: 15px;
+}
+.container{
+    width: 100%; /* ancho */
+    height: 1000px; /* alto */
+    background-color: grey; /*color de fondo */
+    padding:20px; /* relleno */
+}

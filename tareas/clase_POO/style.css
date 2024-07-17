@@ -1,0 +1,13 @@
+body{
+    padding: 15px;
+}
+.container{
+    width: 100%; /* ancho */
+    height: 1000px; /* alto */
+    background-color: red; /*color de fondo */
+    padding:20px; /* relleno */
+}
+.contadorButton{
+    font-size: 17px; /* tamañpo de texto dentro del boton*/
+    padding: 20px 60px; /* relleno*/
+}
