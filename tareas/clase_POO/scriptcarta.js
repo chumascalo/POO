@@ -26,8 +26,7 @@ let count = 0;
                     count -= 1;
                     break;
                 default:
-                    alert(`${carta} no está entre las cartas válidas. Use mayúsculas para las letras.`);
-                    count = "ERROR"
+                    alert(`${carta} no está entre las cartas no contara. Use mayúsculas para las letras.`);
                     break;
             };
         };
@@ -46,8 +45,6 @@ let count = 0;
     else{
         alert("ingrese un caracter valido");
     };
-    resultCount.appendChild(li);
-    card.value = "";
     resultCount.appendChild(li);
     card.value = "";
     
