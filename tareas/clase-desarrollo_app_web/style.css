@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+.margin {
+    background-color:red; /* Color para Margin */
+    padding: 50px;
+}
+
+.border {
+    background-color: purple; /* Color para Border */
+    padding: 50px;
+}
+
+.padding {
+    background-color: blue; /* Color para Padding */
+    padding: 50px;
+}
+
+.content {
+    background-color: aquamarine; /* Color para Content */
+    padding: 50px;
+    text-align: center;
+}
