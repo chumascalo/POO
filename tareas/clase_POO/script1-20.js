@@ -1,8 +1,8 @@
 /* 1. Leer los datos de una persona (Nombre, apellidos, edad) y mostrarlos a
 través de una impresión. */
 
-function nombreAE(event) {
-    event.preventDefault();
+function nombreAE() {
+
 
     let nombre = document.getElementById("name").value;
     let apellido = document.getElementById("Apellidos").value;
