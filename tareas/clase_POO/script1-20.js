@@ -1,8 +1,50 @@
 
+/*21. Ingresar N valores e imprimir solo los pares.
+EJ: Ingreso→ 2,20,45,6,9,1. Imprime: 2, 20, 6
+
+
+function identificarPar(valores) {
+    let pares = [];
+    for (const valor of valores) {
+        if (valor % 2 === 0) {
+            pares.push(valor);
+        }
+    }
+    return pares;
+}
+
+let input = prompt("Ingrese los valores, separados por comas: ");
+let valoresArray = input.split(',').map(Number);
+
+console.log(identificarPar(valoresArray));
+*/
+
+/* 20. Contador de caracteres: Escribe una función que reciba como
+parámetro una cadena de texto y que retorne un objeto con la cantidad
+de veces que aparece cada carácter en la cadena. 
 
 
 
-/*12. Sumar los N primeros pares. 
+let cadenaTexto = prompt("Ingrese una cadena de texto");
+
+function contarCaracteres(cadena) {
+    const conteo = {}; 
+
+    for (const caracter of cadena) {
+        
+        if (conteo[caracter]) {
+            conteo[caracter]++;
+        } else {
+            conteo[caracter] = 1;
+        }
+    }
+
+    return conteo;
+}
+resultado = contarCaracteres(cadenaTexto);
+console.log(`palabra: ${cadenaTexto}`);
+console.log(contarCaracteres(cadenaTexto));
+
 */
 
 
@@ -19,8 +61,212 @@
 
 
 
+/*19. Impresión de números primos: Escribe un algoritmo que permita
+imprimir todos los números primos menores o iguales a un número
+dado.
+
+
+
+
+
+let n = parseInt(prompt("Ingrese cuántos números primos quiere"));
+let array = [];
+
+function esPrimo(num){
+    for (let i = 2 ; i < num; i++){
+if (num <= 1){return false;
+}
+if (num % i === 0){return false;
+}
+return true;
+}};
+
+
+function numPrimos(n){
+    let contador = 0;
+    let num = 2;
+    while (contador < n){
+        if (esPrimo(num)){
+            
+        array.push(num)
+        contador++;
+    };
+    num++;
+};
+return array;
+};
+let resultado = numPrimos(n);
+console.log(`los ${n} numeros primos son: `)
+console.log(resultado)
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*18. Búsqueda de la palabra más larga en una frase: Escribe un algoritmo
+que permita buscar la palabra más larga en una frase dada.
+
+
+
+let frase = prompt("ingrese una frase");
+function palabraMasLarga(frase) {
+    const palabras = frase.split(' ');
+    
+    let palabraLarga = '';
+    
+    for (const palabra of palabras) {
+
+        if (palabra.length > palabraLarga.length) {
+
+            palabraLarga = palabra;
+        }
+    }
+    
+    return palabraLarga;
+}
+
+console.log("La palabra más larga es:", palabraMasLarga(frase));
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*17. Conversión de grados Celsius a Fahrenheit: Escribe un algoritmo que
+permita convertir una temperatura en grados Celsius a Fahrenheit.
+formula: 
+(0 °C × 9/5) + 32 = 32 °F
+
+
+function conversionGrado(celsius){
+    return (celsius * 9/5) + 32;
+    }   
+
+const celsius = parseFloat(prompt("Ingrese la temperatura en grados Celsius:"));
+const fahrenheit = conversionGrado(celsius);
+
+console.log(`${celsius}°C es igual a ${fahrenheit}°F.`);
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*16. Hacer el diagrama de flujo para calcular el factorial de N
+(N!=1·2·3·...·N).
+
+
+function calFactorial(){
+    let n = parseInt(prompt("ingrese a que numero desea calcular su factorial"));
+    let array = []
+    let suma = 1;
+for (let i = 1;i <= n; i++){
+    array.push(i)
+    suma *= i;
+    
+}
+console.log(`el factorial de ${n} es:`)
+console.log(`${array.join(" * ")} = ${suma}`);
+}
+
+calFactorial();
+
+*/
+
+/*15. Sumar los N primeros múltiplos de 3.
+
+let n = prompt("¿Cuántos múltiplos de 3 desea sumar?");
+function sumarMultiplos(n) {
+    let array = [];
+    let suma = 0;
+    for(let i = 1; i <= n; i++) {
+        array.push(i * 3);
+        suma += i * 3;
+    }
+    
+    console.log(`has sumado ${n} multiplos de 3`)
+    console.log(`La suma de ${array} = ${suma}`);
+};
+sumarMultiplos(n);
+
+*/
+
+/*14. Sumar los N primeros impares.
+let array = [];
+function sumarNPares(n) {
+    let suma = 0;
+    for (let i = 1; i <= n; i++) {
+    array.push(2* i + 1);
+        suma += 2 * i + 1; 
+    }
+    return suma;
+}
+
+let n = parseInt(prompt("Ingrese la cantidad de números impares que quiere sumar: "));
+let resultado = sumarNPares(n);
+console.log(`la cantidad de numeros impares que quiere sumar es: ${n}`)
+console.log(`la suma de ${array.join(", ")} = ${resultado}`);
+
+*/
+
+
+
 /* 13. Sumar N números impares.
-function numPares(){
+
+let n =  parseInt(prompt("indicar cantidad de numeros a ingresar: "))
+function sumarImpares(limite){
+    let suma = 0;
+    array=[];
+    for (let i = 1; i<= limite; i++){
+        let input = parseInt(prompt(`ingrese ${i} par: `))
+    array.push(input);
+    }
+    for (let i = 0; i < array.length; i++){
+        if(array[i] % 2 ==! 0){
+            suma += array[i];
+        }
+    }
+    return suma;
+}
+console.log(`resultado de suma pares es: ${sumarImpares(n)}`);
+
+
+
+.....
+function numImpares(){
     array=[];
     let suma = 0;
     let n = prompt("cuantos numeros impares sumara: ")
@@ -28,35 +274,54 @@ function numPares(){
     array.push(i)
         suma += i
 }
-console.log(`la suma de ${n} numeros impares es: ${array.join(", ")} = ${suma}`)
+console.log(`la suma de ${n} numeros impares es: ${array.join(" + ")} = ${suma}`)
 }
 
-numPares()
+numImpares()
+
 */
 
 
 
-
-
-
-/* 11. Sumar N números pares. 
-
-
-function numPares(){
-    array=[];
+/*12. Sumar los N primeros pares.
+let array = [];
+function sumarNPares(n) {
     let suma = 0;
-    let n = prompt("cuantos numeros pares sumara: ")
-    for (let i = 2; i <= n * 2 ; i += 2){
-    array.push(i)
-        suma += i
-}
-console.log(`la suma de ${n} numeros pares es: ${array.join(", ")} = ${suma}`)
+    for (let i = 1; i <= n; i++) {
+    array.push(i * 2);
+        suma += 2 * i; 
+    }
+    return suma;
 }
 
-numPares()
-
+let n = parseInt(prompt("Ingrese la cantidad de primeros números pares: "));
+let resultado = sumarNPares(n);
+console.log(`la suma de ${array.join(" + ")} = ${resultado}`);
 */
 
+
+
+
+
+/* 11. Sumar N números pares.
+
+let n =  parseInt(prompt("indicar cantidad de numeros a ingresar: "))
+function sumarPares(limite){
+    let suma = 0;
+    array=[];
+    for (let i = 1; i<= limite; i++){
+        let input = parseInt(prompt(`ingrese ${i} par: `))
+    array.push(input);
+    }
+    for (let i = 0; i < array.length; i++){
+        if(array[i] % 2 === 0){
+            suma += array[i];
+        }
+    }
+    return suma;
+}
+console.log(`resultado de suma pares es: ${sumarPares(n)}`);
+*/
 
 
 /*10. Leer 2 números y solicitar al usuario que ingrese la opción de sumarlos,
