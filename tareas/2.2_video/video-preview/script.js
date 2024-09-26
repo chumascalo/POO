@@ -6,10 +6,10 @@ function playVideo(videoSecundario, textoId) {
     var textoSecundario = document.getElementById(textoId);  // Obtiene el texto del video secundario
     var textoPrincipal = document.getElementById("texto");  // Obtiene el texto principal
     
-    // Intercambia los textos de los dos elementos
-    var tempTexto = textoSecundario.innerText;  // Guarda temporalmente el texto secundario
-    textoSecundario.innerText = textoPrincipal.innerText;  // Cambia el texto secundario por el principal
-    textoPrincipal.innerText = tempTexto;  // Asigna el texto guardado al principal
+    
+    var tempTexto = textoSecundario.innerText;
+    textoSecundario.innerText = textoPrincipal.innerText;  
+    textoPrincipal.innerText = tempTexto;  
 
     // Intercambia los videos
     var temp = mainvideo.src;  // Guarda temporalmente la fuente del video principal
@@ -24,10 +24,10 @@ function pauseVideo(videoSecundario, textoId) {
     var textoSecundario = document.getElementById(textoId);  // Obtiene el texto del video secundario
     var textoPrincipal = document.getElementById("texto");  // Obtiene el texto principal
 
-    // Intercambia nuevamente los textos
-    var tempTexto = textoSecundario.innerText;  // Guarda temporalmente el texto secundario
-    textoSecundario.innerText = textoPrincipal.innerText;  // Cambia el texto secundario por el principal
-    textoPrincipal.innerText = tempTexto;  // Asigna el texto guardado al principal
+
+    var tempTexto = textoSecundario.innerText;  
+    textoSecundario.innerText = textoPrincipal.innerText; 
+    textoPrincipal.innerText = tempTexto;  
 
     // Intercambia los videos nuevamente
     var tempSrc = mainvideo.src;  // Guarda temporalmente la fuente del video principal
