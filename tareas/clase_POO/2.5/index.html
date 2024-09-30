@@ -1,0 +1,55 @@
+<!-- 1. Eventos de Ratón (Mouse Events) -->
+<!-- onclick: Se activa al hacer clic en un elemento. -->
+<button onclick="alert('Button clicked!')">Click Me</button>
+
+<!-- ondblclick: Se activa con un doble clic. -->
+<button ondblclick="alert('Button double clicked!')">Double Click Me</button>
+
+<!-- onmouseover: Se activa cuando el puntero del ratón pasa sobre un elemento. -->
+<button onmouseover="alert('Mouse Over!')">Hover Me</button>
+
+<!-- onmouseout: Se activa cuando el puntero del ratón sale de un elemento. -->
+<button onmouseout="alert('Mouse Out!')">Move Mouse Out</button>
+
+<!-- onmousemove: Se activa cuando el ratón se mueve dentro del área de un elemento. -->
+<button onmousemove="alert('Mouse Moved!')">Move Mouse Here</button>
+
+<!-- 2. Eventos de Teclado (Keyboard Events) -->
+<!-- onkeydown: Se activa cuando una tecla se presiona. -->
+<input type="text" onkeydown="alert('Key pressed!')">
+
+<!-- onkeyup: Se activa cuando una tecla se libera. -->
+<input type="text" onkeyup="alert('Key released!')">
+
+<!-- 3. Eventos de Formulario (Form Events) -->
+<!-- onchange: Se activa cuando el valor de un campo de formulario cambia. -->
+<input type="text" onchange="alert('Value changed!')">
+
+<!-- onfocus: Se activa cuando un elemento recibe foco. -->
+<input type="text" onfocus="alert('Input focused!')">
+
+<!-- onblur: Se activa cuando un elemento pierde foco. -->
+<input type="text" onblur="alert('Input blurred!')">
+
+<!-- onsubmit: Se activa cuando un formulario se envía. -->
+<form onsubmit="alert('Form submitted!'); return false;">
+  <input type="submit" value="Submit">
+</form>
+
+<!-- 4. Eventos de Carga de la Página (Window Events) -->
+<!-- onload: Se activa cuando la página o un recurso ha terminado de cargarse. -->
+<body onload="alert('Page loaded!')">
+
+<!-- onresize: Se activa cuando la ventana del navegador cambia de tamaño. -->
+<body onresize="alert('Window resized!')">
+
+<!-- 5. Eventos de Toque (Touch Events) -->
+<!-- ontouchstart: Se activa cuando se detecta un toque en la pantalla. -->
+<div ontouchstart="alert('Touched!')">Touch Me</div>
+
+<!-- 6. Eventos de Arrastre (Drag Events) -->
+<!-- ondrag: Se activa durante el arrastre de un elemento. -->
+<div draggable="true" ondrag="alert('Dragging!')">Drag Me</div>
+
+<!-- ondrop: Se activa cuando se suelta un elemento arrastrado. -->
+<div ondrop="alert('Dropped!')">Drop Here</div>
