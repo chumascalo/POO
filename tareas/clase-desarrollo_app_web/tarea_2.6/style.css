@@ -1,0 +1,31 @@
+.row {
+    display: flex; /* Habilita Flexbox en el contenedor */
+    justify-content: space-between; /* Alinea las columnas de manera uniforme */
+}
+
+.col {
+    flex: 1; /* Cada columna tomará el mismo espacio */
+    max-width: 25%; /* Cada columna ocupa el 25% del ancho total */
+    background-color: lightblue; /* Color de fondo para visualizar mejor */
+    margin: 10px; /* Espaciado entre columnas */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+}
+
+.col-2 {
+    flex: 2; /* Ocupa el doble de espacio que .col */
+    max-width: 66.67%; /* 2/3 del ancho total */
+    background-color: lightgreen; /* Color de fondo para visualizar mejor */
+    margin: 10px; /* Espaciado entre columnas */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+}
+
+.col-3 {
+    flex: 3; /* Ocupa el triple de espacio que .col-2 */
+    max-width: 60%; /* 3/5 del ancho total */
+    background-color: lightcoral; /* Color de fondo para visualizar mejor */
+    margin: 10px; /* Espaciado entre columnas */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+}
