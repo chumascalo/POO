@@ -22,7 +22,7 @@
 }
 
 .col-3 {
-    flex: 3; /* Ocupa el triple de espacio que .col-2 */
+    flex: 6; /* Ocupa el triple de espacio que .col-2 */
     max-width: 60%; /* 3/5 del ancho total */
     background-color: lightcoral; /* Color de fondo para visualizar mejor */
     margin: 10px; /* Espaciado entre columnas */
