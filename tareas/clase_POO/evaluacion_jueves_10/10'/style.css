@@ -7,7 +7,6 @@ body {
 }
 
 #calculadora {
-    width: 300px;
     height: 500px;
     width: 500px;
     padding: 20px;
@@ -20,4 +19,8 @@ body {
 .row{
     text-align: center;
     margin: 10px;
+}
+#anteriorResult{
+    margin-right: 100px;
+    text-align: center;
 }
