@@ -3,12 +3,12 @@ let currentInput = "";
 let firstOperand = 0; // Primer número
 let secondOperand = 0; // Segundo número
 let operation = 0;
+
+
 let array = [];
 function press(value) {
-    currentInput += value; //current agarra el valor que salga en el html osea si sale press(7) agarra el 7
-    display.innerText = currentInput;
-    //display deja de ser "0" para ser los/el numero/s elegido/s
-
+    currentInput += value; // Concatenar el valor presionado
+    display.innerText = currentInput; // Mostrar en pantalla el valor ingresado
 }
 
 function clr() {
@@ -16,30 +16,30 @@ function clr() {
     firstOperand = 0;
     secondOperand = 0;
     operation = 0;
-    display.innerText  = "0";
-    //Limpia todo
+    display.innerText = "0";
 }
 
 function setOP(op) {
     if (currentInput === "") return; // Evitar operaciones sin número
+
     if (firstOperand === 0) {
-        firstOperand = parseFloat(currentInput); // Guardar el primer número
-    } else if (operation) {
-        calculate(); // Calcular si ya hay una operación
-    }
+        // Si es el primer operando, guardarlo
+        firstOperand = parseFloat(currentInput);
+    } 
     operation = op; // Establecer nueva operación
-    display.innerText = firstOperand; // Mostrar la operación en el display
-    display.innerText = operation;
-    array = [firstOperand, operation,]
-    currentInput = ""; // Limpiar entrada para el segundo número pero mantener la operación visible
+    display.innerText = firstOperand + " " + operation; // Mostrar el número y la operación juntos
+    currentInput = "";
 }
 
 function calculate() {
     if (currentInput === "" || operation === 0 || firstOperand === 0) return; // Validar entrada
 
     secondOperand = parseFloat(currentInput); // Guardar el segundo número
-
-    array = [firstOperand, operation, secondOperand]
+    
+    
+        array = [firstOperand, operation, secondOperand];
+    
+    
     let result;
 
     switch (operation) {
@@ -60,12 +60,10 @@ function calculate() {
     }
 
     display.innerText = result; // Mostrar resultado
-    firstOperand = 0;
+    firstOperand = result; // Mantener el resultado para el siguiente cálculo
     secondOperand = 0;
     operation = 0;
-    // Preparar para un nuevo cálculo, pero no limpiar inmediatamente
-    
+
     let anteriorResult = document.getElementById("anteriorResult");
-    anteriorResult.innerText = "anterior = " + array.join("");
-    currentInput = ""; // Limpiar entrada para nuevo cálculo
+    anteriorResult.innerText = "anterior "+ array.join(" ") + "= " + result;
 }
