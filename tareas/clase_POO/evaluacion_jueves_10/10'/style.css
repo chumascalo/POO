@@ -1,26 +1,77 @@
 body {
     display: flex;
-    justify-content: center; 
-    align-items: center;     
-    height: 80vh;         
-    margin: 0;              
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura completa de la ventana */
+    margin: 0; /* Eliminar márgenes predeterminados */
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
 }
 
-#calculadora {
-    height: 500px;
-    width: 500px;
+.calculadora {
+    background-color: #ecc3ea;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    
+    width: 300px; /* Ancho fijo de la calculadora */
 }
+
 #display {
-    margin-top: 15vh;
-    text-align: center;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 24px;
 }
-.row{
-    text-align: center;
-    margin: 10px;
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
 }
-#anteriorResult{
-    margin-right: 100px;
-    text-align: center;
+
+.row {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 4px; /* Espacio entre las filas */
+}
+
+.btn {
+    flex: 1 1 calc(25% - 10px);
+    margin: 5px;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    background-color: #d677d6; /* Color de fondo de los botones */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #b64ab6; /* Color al pasar el cursor */
+}
+
+.equal {
+    background-color: #86da9a; /* Color diferente para el botón igual */
+}
+
+.equal:hover {
+    background-color: #62bd77; /* Color al pasar el cursor sobre igual */
+}
+
+#anteriorResult {
+    margin-top: 10px;
+    text-align: right;
+    font-size: 16px;
+    color: #555;
+}
+#calculando {
+    margin-top: 10px;
+    text-align: right;
+    font-size: 16px;
+    color: #555;
 }

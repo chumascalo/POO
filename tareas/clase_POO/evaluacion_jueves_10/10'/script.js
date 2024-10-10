@@ -1,9 +1,9 @@
 let display = document.getElementById("display");
+let calculando = document.getElementById("calculando");
 let currentInput = "";
 let firstOperand = 0; // Primer número
 let secondOperand = 0; // Segundo número
 let operation = 0;
-
 
 let array = [];
 function press(value) {
@@ -17,6 +17,7 @@ function clr() {
     secondOperand = 0;
     operation = 0;
     display.innerText = "0";
+    calculando.innerText = "calculando con = ";
 }
 
 function setOP(op) {
@@ -58,7 +59,7 @@ function calculate() {
         default:
             return; // Si no hay operación válida
     }
-
+    calculando.innerText = "calculando con = " + result ;
     display.innerText = result; // Mostrar resultado
     firstOperand = result; // Mantener el resultado para el siguiente cálculo
     secondOperand = 0;
