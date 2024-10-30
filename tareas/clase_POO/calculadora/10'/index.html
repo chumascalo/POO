@@ -1,13 +1,28 @@
-    <!DOCTYPE html>
+
     <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Calculadora</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            
+            <nav class="navbar">
+                <div class="calculadora">
+                <h1>Calculadora</h1>
+                </div>
+                <div>
+                <ul class="lista">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+                </ul>
+                </div>
+                
+            </nav>
+            
         <div id="calculadora">
             <div id="display">0</div>
             <div class="row">
@@ -37,9 +52,6 @@
             <div class="row">
             <button id="equals" onclick="calculate()">=</button>
             </div>
-            
-            <div id="anteriorResult">Anterior op. = 0</div>
-            <div id="calculando"> calculando con = 0</div>
         <div>
         <script src="script.js"></script>
     </body>

@@ -1,0 +1,158 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f3f3f3;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.sign-out {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Profile Section */
+.profile {
+    width: 65%;
+    margin-right: 20px;
+}
+
+.profile-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile-photo {
+    width: 80px;
+    height: 80px;
+    background-color: #0078d4;
+    border-radius: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.location img {
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+}
+
+.edit-profile img {
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 35%;
+}
+
+.connection-requests, .connections {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.connection-requests h4, .connections h4 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.request, .connection {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.profile-icon img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Botones de aceptar y rechazar con iconos */
+.accept, .decline {
+    background: none;
+    border: none;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+
+.accept {
+    background-image: url('iconos/icons/accept-circle.png');
+}
+
+.decline {
+    background-image: url('iconos/icons/close-circle.png');
+}
+
+.view-more {
+    display: inline-block;
+    color: #0078d4;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 14px;
+}

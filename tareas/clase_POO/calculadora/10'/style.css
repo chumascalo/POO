@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    padding-top: 60px;
+}
+
+.calculator {
+    background-color: #ecc3ea;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+#display {
+    width: 260px;
+    height: 60px;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+button {
+    flex: 1;
+    margin: 5px;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #d677d6;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b64ab6;
+}
+
+.operator {
+    background-color: #d6a8e7;
+}
+
+.operator:hover {
+    background-color: #b678c2;
+}
+
+#equals {
+    background-color:#d677d6;
+}
+
+#equals:hover {
+    background-color: #b64ab6;
+}
+
+.navbar {
+    background-color: #b64ab6;
+    top: 0;
+    position: fixed;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar .calculadora h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+.navbar .lista {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar .lista a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.navbar .lista a:hover {
+    background-color: #d677d6;
+    border-radius: 500px;
+}
