@@ -1,160 +1,154 @@
-/* Estilos generales del cuerpo de la página */
 body {
-    font-family: Arial, sans-serif; /* Fuente para todo el texto */
-    margin: 0; /* Elimina el margen por defecto del cuerpo */
-    background-color: #f3f3f3; /* Color de fondo para la página */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f3f3f3;
 }
 
-/* Estilos para el encabezado */
 header {
-    background-color: #333; /* Fondo oscuro para el encabezado */
-    color: white; /* Texto blanco para contrastar */
-    padding: 10px 20px; /* Espaciado interno */
-    display: flex; /* Alineación de elementos en fila */
-    justify-content: space-between; /* Espacio entre los elementos del encabezado */
-    align-items: center; /* Alineación vertical al centro */
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-left {
-    display: flex; /* Alineación en fila para los elementos de la izquierda */
-    align-items: center; /* Alineación vertical al centro */
+    display: flex;
+    align-items: center;
 }
 
 .logo {
-    font-size: 20px; /* Tamaño de fuente del logo */
-    font-weight: bold; /* Texto en negrita */
-    margin-right: 20px; /* Espaciado a la derecha del logo */
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
 }
 
 nav a {
-    color: white; /* Color blanco para los enlaces */
-    margin-right: 15px; /* Espacio entre los enlaces */
-    text-decoration: none; /* Quita el subrayado */
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
 }
 
 .sign-out {
-    background-color: #0078d4; /* Color de fondo para el botón de salida */
-    color: white; /* Texto blanco */
-    border: none; /* Sin borde */
-    padding: 8px 12px; /* Relleno interno */
-    cursor: pointer; /* Cambia el cursor al pasar por el botón */
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
 }
 
-/* Contenedor principal para el contenido de la página */
 .container {
-    display: flex; /* Alineación en fila de los elementos */
-    padding: 20px; /* Relleno interno alrededor del contenido */
-    max-width: 1000px; /* Anchura máxima de la página */
-    margin: auto; /* Centra el contenedor */
+    display: flex;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
 }
 
-/* Sección de perfil */
+/* Profile Section */
 .profile {
-    width: 65%; /* Anchura para la sección de perfil */
-    margin-right: 20px; /* Espacio a la derecha del perfil */
+    width: 65%;
+    margin-right: 20px;
 }
 
 .profile-card {
-    background-color: white; /* Fondo blanco para la tarjeta de perfil */
-    padding: 20px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra para dar relieve */
-    text-align: center; /* Centra el texto */
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
 }
 
 .profile-photo {
-    width: 80px; /* Anchura de la foto de perfil */
-    height: 80px; /* Altura de la foto de perfil */
-    background-color: #0078d4; /* Color de fondo para el círculo */
-    border-radius: 50%; /* Hace la imagen circular */
-    margin: auto; /* Centra la foto */
-    overflow: hidden; /* Oculta cualquier desbordamiento */
+    width: 80px;
+    height: 80px;
+    background-color: #0078d4;
+    border-radius: 50%;
+    margin: auto;
+    overflow: hidden;
 }
 
 .profile-photo img {
-    width: 100%; /* Imagen ocupa todo el contenedor */
-    height: auto; /* Ajusta la altura proporcionalmente */
-    object-fit: cover; /* Recorta la imagen para cubrir el área */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .location img {
-    vertical-align: middle; /* Alineación vertical en el medio */
-    width: 14px; /* Tamaño del ícono de ubicación */
+    vertical-align: middle;
+    width: 14px;
     height: 14px;
-    margin-right: 5px; /* Espacio a la derecha del ícono */
+    margin-right: 5px;
 }
 
 .edit-profile img {
-    width: 14px; /* Tamaño del ícono de edición */
+    width: 14px;
     height: 14px;
     vertical-align: middle;
-    margin-right: 5px; /* Espacio a la derecha del ícono */
+    margin-right: 5px;
 }
 
-/* Barra lateral (Sidebar) */
+/* Sidebar */
 .sidebar {
-    width: 35%; /* Ancho de la barra lateral */
+    width: 35%;
 }
 
 .connection-requests, .connections {
-    background-color: white; /* Fondo blanco para cada sección */
-    padding: 15px; /* Espaciado interno */
-    margin-bottom: 20px; /* Espacio entre secciones */
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra para dar relieve */
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 .connection-requests h4, .connections h4 {
-    font-size: 16px; /* Tamaño del texto de los títulos */
-    color: #333; /* Color de texto */
-    margin-bottom: 10px; /* Espacio debajo de los títulos */
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .request, .connection {
-    display: flex; /* Alineación en fila de los elementos */
-    align-items: center; /* Centra los elementos verticalmente */
-    margin-bottom: 10px; /* Espacio entre elementos */
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .profile-icon {
-    width: 30px; /* Tamaño del ícono de perfil */
+    width: 30px;
     height: 30px;
-    background-color: #ddd; /* Fondo gris claro */
-    border-radius: 50%; /* Hace el ícono circular */
-    overflow: hidden; /* Oculta el desbordamiento */
-    margin-right: 10px; /* Espacio a la derecha del ícono */
+    background-color: #ddd;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
 }
 
 .profile-icon img {
-    width: 100%; /* Imagen ocupa todo el contenedor */
+    width: 100%;
     height: auto;
-    object-fit: cover; /* Recorta la imagen para cubrir el área */
+    object-fit: cover;
 }
 
-/* Estilos para los botones de aceptar y rechazar con iconos */
+/* Botones de aceptar y rechazar con iconos */
 .accept, .decline {
-    background: none; /* Sin fondo por defecto */
-    border: none; /* Sin borde */
-    width: 24px; /* Tamaño del botón */
+    background: none;
+    border: none;
+    width: 24px;
     height: 24px;
-    cursor: pointer; /* Cursor de puntero al pasar sobre el botón */
-    background-size: cover; /* La imagen cubre el área del botón */
-    background-repeat: no-repeat; /* Evita la repetición de la imagen */
-    margin-left: 10px; /* Espacio entre el botón y otros elementos */
+    cursor: pointer;
+    background-size: cover;
+    margin-left: 10px;
 }
 
 .accept {
-    background-image: url('iconos/icons/accept-circle.png'); /* Ícono de aceptar */
+    background-image: url('iconos/icons/accept-circle.png');
 }
 
 .decline {
-    background-image: url('iconos/icons/close-circle.png'); /* Ícono de rechazar */
+    background-image: url('iconos/icons/close-circle.png');
 }
 
 .view-more {
-    display: inline-block; /* Elemento en línea con propiedades de bloque */
-    color: #0078d4; /* Color del enlace */
-    text-decoration: none; /* Quita el subrayado */
-    margin-top: 10px; /* Espacio superior */
-    font-size: 14px; /* Tamaño del texto */
+    display: inline-block;
+    color: #0078d4;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 14px;
 }
